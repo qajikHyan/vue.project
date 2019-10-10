@@ -1,5 +1,5 @@
 <template>
-  <div class="grey darken-1 empty-layout">
+  <div class="empty-layout bg-img">
     <router-view/>
   </div>
 </template>
@@ -20,3 +20,11 @@ export default {
   }
 }
 </script>
+
+<style>
+  .bg-img{
+    background-image: url(../assets/images/background.jpg);
+    background-size: 100%;
+    background-position: bottom;
+  }
+</style>

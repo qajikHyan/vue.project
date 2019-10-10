@@ -1,5 +1,5 @@
 <template>
-  <ul class="sidenav app-sidenav" :class="{open: value}">
+  <ul class="sidenav app-sidenav bg-img" :class="{open: value}">
     <router-link
       v-for="link in links"
       :key="link.url"
@@ -8,7 +8,7 @@
       :to="link.url"
       :exact="link.exact"
     >
-      <a href="#" class="waves-effect waves-orange pointer">{{link.title}}</a>
+      <a href="#" class="waves-effect pointer">{{link.title}}</a>
     </router-link>
   </ul>
 </template>
@@ -29,5 +29,10 @@ export default {
 }
 </script>
 
-
+<style scoped>
+  .bg-img{
+    background-image: url(../../assets/images/22.jpg);
+    background-position: top;
+  }
+</style>
 
